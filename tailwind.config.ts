@@ -76,12 +76,17 @@ export default {
           from: { opacity: "0", transform: "translateX(-40px)" },
           to: { opacity: "1", transform: "translateX(0)" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.8s ease-out forwards",
         "slide-in": "slide-in 0.8s ease-out forwards",
+        marquee: "marquee 20s linear infinite",
       },
     },
   },
